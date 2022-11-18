@@ -1,0 +1,166 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/biri/dist/biri.min.js"></script>
+
+	<title>Travelino Game</title>
+
+	<script src="lib/phaser.min.js"></script>
+	<script src="src/components/UserComponent.js"></script>
+	<script src="src/components/PushOnClick.js"></script>
+	<script src="src/components/PreloadText.js"></script>
+	<script src="src/scenes/Preload.js"></script>
+	<script src="src/scenes/Play.js"></script>
+	<script src="src/scenes/Level.js"></script>
+	<script src="src/scenes/Ban.js"></script>
+	<script src="src/scenes/Win.js"></script>
+	<script src="src/main.js"></script>
+
+	<link rel="stylesheet preload" as="font" href="assets/fonts/RankedSports-4BMrB.ttf" type="font/ttf" crossorigin />
+	<link rel="stylesheet" href="assets/css/font.css">
+
+	<style>
+		body {
+			background: #000000;
+			margin: 0;
+			padding: 0;
+			overflow: hidden !important;
+		}
+
+		#game-division {
+			margin: 0px;
+			padding: 0px;
+			height: 100vh;
+			width: 100vw;
+		}
+
+		canvas {
+			border: 1px solid black;
+		}
+
+		#img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			background-color: #000000;
+			background-image: url('assets/device/portraitNotification.gif');
+			background-repeat: no-repeat;
+			background-position: center center;
+			display: none;
+			z-index: 999;
+			background-size: 100% auto;
+		}
+
+		#game-division div {
+			z-index: 1000 !important;
+		}
+
+		@media only screen and (orientation:portrait) {
+			body {
+				height: 100vh;
+				overflow: hidden !important;
+			}
+			#game-division div {
+				z-index: 1000 !important;
+				max-width: 100% !important;
+				max-height: 100% !important;
+				transform: none !important;
+				top: 0 !important;
+				margin: 0 !important;
+			}
+		}
+
+		@media(max-width:1200px) {
+			canvas {
+				margin: 0 !important;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%) rotate(90deg);
+				width: calc(var(--vw, 1vh) * 85) !important;
+    			height: calc(var(--vh, 1vh) * 45) !important;
+			}
+		}
+		@media(max-width:1024px) {
+			#game-division > div { 
+				height:100% !important;
+				display:flex !;
+				flex-wrap:wrap;
+				align-items:center;
+				justify-content:center;
+				
+			 }
+			 #game-division > div >div {
+				top:50% !important;
+				left:50% !important;
+				transform:translate(-50%,-50%) !important;
+			 }
+			 form { transform:rotate(90deg) }
+		}
+	</style>
+</head>
+
+<body>
+	<div id="img"></div>
+	<script>
+		var game;
+		var detectDevice;
+		const gameName = "Travelino - ";
+		console.log(gameName,"V1.00");
+	</script>
+	<div id="game-division" style="background-color: #000000;"> </div>
+	<table width=100% height=100% border="0" id="splashPage">
+		<tr>
+			<td style="text-align: center; vertical-align: middle;">
+			</td>
+		</tr>
+	</table>
+	<script>
+		function init() {
+			getMobileOperatingSystem();
+		}
+		function getMobileOperatingSystem() {
+			var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+			if (/windows phone/i.test(userAgent)) {
+				detectDevice = "Windows";
+				console.log("Device: Windows");
+			} else if (/android/i.test(userAgent)) {
+				detectDevice = "Android";
+				console.log("Device: Android");
+			} else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+				detectDevice = "IOS";
+				console.log("Device: IOS");
+			} else {
+				detectDevice = "Desktop"
+				console.log("Device: Desktop");
+			}
+		}
+		window.onload = init();
+		// window.onload = event => {
+        //     if (window.innerHeight > window.innerWidth) {
+        //         console.log("Please use Landscape!");
+        //         document.getElementById("img").style.display = "block";
+        //     } else {
+        //         console.log("Landscape Mode Verified!");
+        //         document.getElementById("img").style.display = "none";
+        //     }
+        // }
+		// window.onorientationchange = event => {
+        //     if (window.innerHeight > window.innerWidth) {
+        //         console.log("Please use Landscape!");
+        //         document.getElementById("img").style.display = "none";
+        //     } else {
+        //         console.log("Landscape Mode Verified!");
+        //         document.getElementById("img").style.display = "block";
+        //     }
+        // };
+	</script>
+</body>
+
+</html>

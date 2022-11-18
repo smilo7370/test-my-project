@@ -1,0 +1,85 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/images/background/background.jpg",
+                "type": "image",
+                "key": "background"
+            },
+            {
+                "url": [
+                    "assets/sounds/backgroundMusic.mp3"
+                ],
+                "type": "audio",
+                "key": "backgroundMusic"
+            },
+            {
+                "url": "assets/images/buttons/button.png",
+                "type": "image",
+                "key": "button"
+            },
+            {
+                "url": "assets/images/timer/fill.png",
+                "type": "image",
+                "key": "energybar"
+            },
+            {
+                "url": "assets/images/timer/back.png",
+                "type": "image",
+                "key": "energycontainer"
+            },
+            {
+                "url": "assets/images/buttons/off.png",
+                "type": "image",
+                "key": "off"
+            },
+            {
+                "url": "assets/images/buttons/on.png",
+                "type": "image",
+                "key": "on"
+            },
+            {
+                "url": "assets/images/platform/plane1.png",
+                "type": "image",
+                "key": "plane1"
+            },
+            {
+                "url": "assets/images/platform/plane2.png",
+                "type": "image",
+                "key": "plane2"
+            },
+            {
+                "url": "assets/images/platform/plane3.png",
+                "type": "image",
+                "key": "plane3"
+            },
+            {
+                "url": "assets/images/platform/platform.png",
+                "type": "image",
+                "key": "platform"
+            },
+            {
+                "url": "assets/images/player/Character.png",
+                "type": "image",
+                "key": "player"
+            },
+            {
+                "url": "assets/device/portrait.png",
+                "type": "image",
+                "key": "portrait"
+            },
+            {
+                "url": "assets/device/portraitNotification.gif",
+                "type": "image",
+                "key": "portraitNotification"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/images/spritesheets/_Jump-Spritesheet.png",
+                "frameConfig": {
+                    "frameWidth": 750,
+                    "frameHeight": 750,
+                    "startFrame": 0,
+                    "endFrame": 6,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "_Jump-Spritesheet"
+            },
+            {
+                "url": "assets/images/heart/1.png",
+                "type": "image",
+                "key": "1"
+            },
+            {
+                "url": "assets/images/heart/2.png",
+                "type": "image",
+                "key": "2"
+            },
+            {
+                "url": "assets/animations/animations.json",
+                "type": "animation",
+                "key": "animations"
+            },
+            {
+                "url": [
+                    "assets/sounds/dieSound.mp3"
+                ],
+                "type": "audio",
+                "key": "dieSound"
+            },
+            {
+                "url": "src/scenes/GameLogin.js",
+                "type": "sceneFile",
+                "key": "GameLogin"
+            },
+            {
+                "url": "src/scripts/GameManager.js",
+                "type": "script",
+                "key": "GameManager"
+            },
+            {
+                "url": "src/components/idleAnimation.js",
+                "type": "script",
+                "key": "idleAnimation"
+            },
+            {
+                "url": [
+                    "assets/sounds/jumpSound.mp3"
+                ],
+                "type": "audio",
+                "key": "jumpSound"
+            },
+            {
+                "url": "assets/images/spritesheets/Spritesheet.png",
+                "frameConfig": {
+                    "frameWidth": 750,
+                    "frameHeight": 750,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "run"
+            },
+            {
+                "url": "src/scripts/SoundManager.js",
+                "type": "script",
+                "key": "SoundManager"
+            },
+            {
+                "url": [
+                    "assets/sounds/yaySound.mp3"
+                ],
+                "type": "audio",
+                "key": "yaySound"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

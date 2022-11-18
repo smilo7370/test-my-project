@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Travelino Login</title>
+    <style>
+    body {
+        overflow: hidden;
+    }
+    .form {
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        margin: 2px;
+        padding: 10px;
+        width: 220px;
+        border-radius: 10px;
+        border-collapse: separate;
+    }
+
+    .btn {
+        background-color: transparent;
+        margin: 4px;
+        padding: 5px;
+        color: white;
+        border: 2px solid white;
+        border-radius: 15px;
+        border-collapse: separate;
+    }
+
+    .btn:focus,
+    .form:focus {
+        outline: none;
+    }
+
+    ::placeholder {
+        color: white;
+        opacity: 1;
+    }
+
+    .btn-row {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+</head>
+<body>
+    <form>
+    <input class="form" type="text" placeholder="Enter Email" name="username" autofocus></br></br>
+    <div class="btn-row">
+        <input class="btn" type="button" value="Start Game" name="loginButton">
+    </div>
+    </form>
+</body>
+</html>
+

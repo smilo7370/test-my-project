@@ -1,0 +1,30 @@
+{
+    "id": "79b80fc4-ab54-493d-8c09-444d28ad4e1b",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "GameLogin",
+        "borderWidth": 1920,
+        "borderHeight": 1080
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "193a4ffd-4530-4b4b-95ad-38f6acc1ea89",
+            "label": "login_container",
+            "scope": "CLASS",
+            "components": [],
+            "x": 960,
+            "y": 540,
+            "list": []
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
